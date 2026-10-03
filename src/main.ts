@@ -80,7 +80,7 @@ const view = new SceneView({
     accentColor: "rgb(0,255,0)",
   },
 });
-view.ui.remove("attribution");
+view.ui.remove(["attribution", "zoom", "compass", "navigation-toggle"]);
 
 const spinGlobe = addFrameTask({
   update: () => {

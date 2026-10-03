@@ -1,0 +1,44 @@
+{
+  "olympus_mons": {
+    "Description": "Olympus Mons stands as the loftiest planetary volcano documented across our solar system. The shield formation stems from basaltic lava discharges repeated across millennia.",
+    "Elevation": "21.9 km Vertical Relief",
+    "Caldera Span": "80 km × 60 km Depth System",
+    "Habitability": "88% Subsurface Radiation Shielding"
+  },
+  "jezero_crater": {
+    "Description": "An impact crater on Mars that is believed to have once been flooded with water, making it a prime location for the search for ancient microbial life.",
+    "Diameter": "49.0 km",
+    "Mission Status": "Perseverance rover actively exploring",
+    "Habitability": "High signs of ancient water flow"
+  },
+  "perseverance": {
+    "Description": "NASA's Perseverance rover is exploring Jezero Crater to seek signs of ancient life and collect samples of rock and regolith for possible return to Earth.",
+    "Launch Date": "July 30, 2020",
+    "Landing Date": "Feb 18, 2021",
+    "Status": "Active"
+  },
+  "curiosity": {
+    "Description": "A car-sized rover designed to explore Gale Crater on Mars as part of NASA's Mars Science Laboratory mission.",
+    "Location": "Latitude: 4.5895° S, Longitude: 136.7776° E",
+    "Mission": "Mars Science Laboratory",
+    "Launch Date": "Nov 26, 2011",
+    "Landing Date": "Aug 6, 2012",
+    "Average Temperature": "-63°C",
+    "Water Percentage in Soil": "1-2%",
+    "Elevation": "-4.5 km",
+    "Max Terrain Slope": "15°",
+    "Status": "Active"
+  },
+  "opportunity": {
+    "Description": "A robotic rover that was active on Mars from 2004 to 2018. It landed in Meridiani Planum and made numerous discoveries about the planet's watery past.",
+    "Landing Date": "Jan 25, 2004",
+    "Mission Duration": "5111 Sols (Martian days)",
+    "Status": "Mission Complete"
+  },
+  "valles_marineris": {
+    "Description": "A vast canyon system that runs along the Martian equator. It is one of the largest canyons in the solar system, stretching over 4,000 km.",
+    "Length": "4,000 km",
+    "Depth": "Up to 7 km",
+    "Habitability": "Exposed geologic layers"
+  }
+}

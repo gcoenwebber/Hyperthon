@@ -16,31 +16,28 @@ import { subclass } from "@arcgis/core/core/accessorSupport/decorators";
 import Widget from "@arcgis/core/widgets/Widget";
 import { tsx } from "@arcgis/core/widgets/support/widget";
 import AppState from "./AppState";
-import { ComparePage } from "../compare/ComparePage";
-import { MeasurePage } from "../measure/MeasurePages";
 import { match } from "ts-pattern";
 import type { Page } from "./AppState";
 import { LocationPage } from "../location/LocationPage";
-import { CreditsPage } from "../credits/CreditsPage";
 import { LandingPage } from "../home/HomePage";
-import { CookieBanner } from "../utility-components/CookieBanner";
 import { Loading } from "../utility-components/Loading";
 import styles from "./app.module.scss";
-import { MenuBar } from "../utility-components/menu-bar/MenuBar";
 import { Page as PageWrapper } from "../utility-components/Page";
 import { BasemapSwitcher } from "./BasemapSwitcher";
+import { HudLayer } from "./HudLayer";
+import { property } from "@arcgis/core/core/accessorSupport/decorators";
 
 @subclass("ExploreMars.Application")
 class Application extends Widget {
+  @property()
+  hudLayer = new HudLayer();
+
   renderPage(page: string) {
     return match(page)
       .with("home", () => <div style="display:none;" />)
       .with("landing", () => <div style="display:none;" />)
-      .with("measure", () => <MeasurePage />)
-      .with("compare", () => <ComparePage />)
-      .with("credits", () => <CreditsPage />)
       .with("locations", () => <LocationPage />)
-      .run()!;
+      .otherwise(() => <div style="display:none;" />);
   }
 
   render() {
@@ -52,12 +49,12 @@ class Application extends Widget {
 
     return (
       <div class={styles.wrapper}>
-        <MenuBar
-          onItemClick={(item) => {
-            this.goToPage(item);
-          }}
-        />
-        <CookieBanner />
+        <div 
+          style="position: absolute; inset: 0; pointer-events: none;" 
+          hidden={AppState.route.match("landing") as any}
+        >
+          {this.hudLayer.render()}
+        </div>
         <PageWrapper
           hidden={
             AppState.route.match("home") || AppState.route.match("landing")

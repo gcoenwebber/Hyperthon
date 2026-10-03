@@ -16,6 +16,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   server: {
+    allowedHosts: [
+      "crazy-moments-rule.loca.lt", "major-flowers-check.loca.lt"
+    ],
     port: 3000,
   },
   base: "/",

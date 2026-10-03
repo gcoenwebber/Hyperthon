@@ -1,10 +1,10 @@
 {
-  "name": "explore-mars",
+  "name": "marsverse",
   "version": "1.0.0",
   "description": "Interactively discover the red planet using the ArcGIS Maps SDK for JavaScript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Esri/explore-mars"
+    "url": "https://github.com/Esri/marsverse"
   },
   "type": "module",
   "author": "Gunnar Ingi Stefansson",
@@ -40,5 +40,9 @@
     "stylelint": "^16.3.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "typescript-eslint": "^7.5.0"
+  },
+  "allowScripts": {
+    "@vaadin/vaadin-usage-statistics@2.1.3": true,
+    "esbuild@0.21.5": true
   }
 }

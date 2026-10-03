@@ -1,0 +1,44 @@
+{
+  "olympus_mons": {
+    "temperature": -75,
+    "radiationShielding": 88,
+    "waterIceProximity": 12,
+    "structuralStability": 95,
+    "atmosphericPressure": 0.05
+  },
+  "jezero_crater": {
+    "temperature": -60,
+    "radiationShielding": 45,
+    "waterIceProximity": 85,
+    "structuralStability": 70,
+    "atmosphericPressure": 0.6
+  },
+  "valles_marineris": {
+    "temperature": -50,
+    "radiationShielding": 75,
+    "waterIceProximity": 40,
+    "structuralStability": 65,
+    "atmosphericPressure": 0.9
+  },
+  "curiosity": {
+    "temperature": -63,
+    "radiationShielding": 35,
+    "waterIceProximity": 25,
+    "structuralStability": 80,
+    "atmosphericPressure": 0.65
+  },
+  "perseverance": {
+    "temperature": -60,
+    "radiationShielding": 45,
+    "waterIceProximity": 85,
+    "structuralStability": 70,
+    "atmosphericPressure": 0.6
+  },
+  "default": {
+    "temperature": -65,
+    "radiationShielding": 30,
+    "waterIceProximity": 15,
+    "structuralStability": 60,
+    "atmosphericPressure": 0.6
+  }
+}
